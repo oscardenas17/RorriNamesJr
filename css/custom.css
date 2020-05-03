@@ -1,15 +1,17 @@
 body {
-    background: #56CCF2; 
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  
-    background: linear-gradient(to right, #2F80ED, #56CCF2); 
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2CZocuyVkaagNVnxYWZS3aaU-BV1hBs5tPm7EVdpFMayo9ldO&usqp=CAU); 
+    /* background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  
+    background: linear-gradient(to right, #2F80ED, #56CCF2);  */
 }
 .contenido {
     margin-top: 40px;
 }
 h1 {
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 34px;
+    font-size: 40px;
+    border: 1px solid black;
+    background: #56CCF2;
 }
 
 form {
