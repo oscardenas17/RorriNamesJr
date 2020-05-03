@@ -39,7 +39,7 @@ function cargarNombres(e){
             const nombres = JSON.parse(this.responseText).results
             //Generar el HTML
             let htmlNombres = '<h2>Nombres generados</h2>'
-        
+          if(generoSeleccionado === 'male'){
             htmlNombres +='<ul class="lista">';
             //Imprimir cada nombre
             nombres.forEach(nombre => {
@@ -51,7 +51,19 @@ function cargarNombres(e){
             });
  
             htmlNombres += '</ul>'
- 
+          }else{
+               htmlNombres +='<ul class="lista-rosa">';
+               //Imprimir cada nombre
+               nombres.forEach(nombre => {
+                     //     AQUÍ HAY UNA DIFERENCIA EN EL CODIGO   
+                   htmlNombres += `
+             
+                       <li>${nombre.name.first}  Hernandez Cardenas</li>
+                   `;
+               });
+    
+               htmlNombres += '</ul>'
+          }
             document.getElementById('resultado').innerHTML = htmlNombres
         }
     };

@@ -26,8 +26,20 @@ form {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #56CCF2; 
-    background: rgb(219, 246, 255); 
+    background: rgb(red, green, blue) 
+
+}.lista-rosa{
+    list-style: none;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid palevioletred; 
+    background: #ffccff; 
 }
+
+
+
 .lista li:last-child{
     margin:0;
 }
