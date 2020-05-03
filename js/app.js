@@ -43,8 +43,9 @@ function cargarNombres(e){
             htmlNombres +='<ul class="lista">';
             //Imprimir cada nombre
             nombres.forEach(nombre => {
+                  //     AQUÍ HAY UNA DIFERENCIA EN EL CODIGO   
                 htmlNombres += `
-                 // AQUÍ HAY UNA DIFERENCIA EN EL CODIGO    
+          
                     <li>${nombre.name.first}</li>
                 `;
             });
